@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /**
+         * find(): dùng để tìm kiếm phần tử thõa mãn điều kiện
+         * Nếu thõa mãn điều kiệN thì trả về phần tử
+         * Nếu không thỏa mãn trả về undefined
+         */
+        let users = [
+            {
+                id: 5,
+                name: "dũng",
+
+            },
+            {
+                id: 6,
+                name: "hoàng",
+            }
+        ]
+        // tìm kiếm trong mảng users có phần tử có id =6 hay không?
+        let result = users.find((item, index, arr) => {
+            return item.id === 7
+        })
+        console.log(11111, result);
+    </script>
+</body>
+
+</html>

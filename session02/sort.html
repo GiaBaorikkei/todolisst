@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+            sort: sắp xếp
+         */
+        let array = ["hoa", "an", "tuấn", "bình", "minh thu"];
+        let numbers = [1, 7, 11, 6, 19];
+        let films = [{
+            name: "nhà bà nam",
+            date: "2024/11/09"
+        },
+        {
+            name: "nhà bà nữ",
+            date: "2024/08/15"
+        },
+        {
+            name: "nhà bà hoa",
+            date: "2024/12/25"
+        },
+        {
+            name: "nhà bà hồng",
+            date: "2024/09/12"
+        }
+        ]
+        // console.log("3333333", "2024/09/12".split("/"));
+        // 20240912
+        // let result1 = array.sort()
+        // let result2 = numbers.sort((a, b) => {
+        //     return -a + b
+        // });
+        // ;
+        // console.log("1111", result2);
+
+        // films.sort(function (a, b) {
+        //     return new Date(a.date) - new Date(b.date);
+        // });
+        // console.log(films);
+        let check = films.sort((a,b)=>{
+            return a.date.localeCompare(b.date);
+        })
+        console.log(check);
+
+
+    </script>
+</body>
+
+</html>
