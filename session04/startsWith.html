@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="file" onchange="changeImage(this)">
+    <button onclick="saveImage()">lưu</button>
+    <script>
+        let text = "cố gắng học lập trình";
+        let result = text.endsWith("nh");
+        console.log("1111", result);
+        // function lưu ảnh
+        function saveImage(params) {
+
+        }
+        // function thay đổi ảnh
+        function changeImage(element) {
+            console.log("1111", element.files[0]);
+            if (element.files[0].size > 1000000) {
+                console.log("không cho lưu");
+                return
+            }
+        }
+
+    </script>
+</body>
+
+</html>
