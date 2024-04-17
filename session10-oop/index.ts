@@ -39,7 +39,7 @@ class Person{
    // lấy ra: get
    // set
     firstName: string
-    lastName:string
+     lastName:string
     private address:string
     constructor(name:string,age:number,firstName:string,lastName:string,address:string){
         this.name1=name;
@@ -82,7 +82,7 @@ std1.showInfo();
 /* 
     1. public
     2. private
-    3. proceted liên quan đến kế thừa
+    3. protected liên quan đến kế thừa
     - khi class con kế thừa class cha thì class con sẽ có
     các thuộc tính và phương thức của class cha
     - khi phạm vi truy cập proceted thì class con không truy cập được thuộc tính 
